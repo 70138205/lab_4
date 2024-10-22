@@ -1,24 +1,14 @@
+import 'package:first_app/currency_converter_page.dart';
 import 'package:flutter/material.dart';
 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(home: CurrencyConverterPage());
+  }
+}
+
 void main() {
-  runApp(MaterialApp(
-      home: Scaffold(
-    body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color.fromARGB(255, 62, 97, 114),
-                Color.fromARGB(255, 24, 163, 233)
-              ]),
-        ),
-        child: const Center(
-            child: Text('Hello Zara',
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                )))),
-  )));
+  runApp(const MyApp());
 }
