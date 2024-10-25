@@ -15,7 +15,7 @@ class CurrencyConverterPage extends StatelessWidget {
     );
 
     return Scaffold(
-        backgroundColor: Color.fromARGB(213, 220, 240, 117),
+        backgroundColor: Color.fromARGB(50, 40, 59, 17),
         body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +36,7 @@ class CurrencyConverterPage extends StatelessWidget {
                     hintStyle: TextStyle(color: Colors.blue),
                     prefixIcon: Icon(Icons.monetization_on),
                     filled: true,
-                    fillColor: Colors.red,
+                    fillColor: Colors.blueGrey,
                     focusedBorder: border,
                     enabledBorder: border,
                   ),
@@ -48,12 +48,12 @@ class CurrencyConverterPage extends StatelessWidget {
                   debugPrint('Pressed');
                 },
                 style: TextButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(222, 63, 76, 160),
+                  backgroundColor: const Color.fromARGB(50, 46, 42, 117),
                   fixedSize: const Size(150, 50),
                 ),
                 child: const Text(
                   "Convert",
-                  style: TextStyle(color: Colors.black38),
+                  style: TextStyle(color: Colors.purple),
                 ),
               ),
             ],
