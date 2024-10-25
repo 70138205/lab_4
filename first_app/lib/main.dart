@@ -5,7 +5,8 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: CurrencyConverterPage());
+    return const MaterialApp(
+        title: 'Currency Converter', home: CurrencyConverterPage());
   }
 }
 
